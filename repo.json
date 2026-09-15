@@ -1,0 +1,26 @@
+[
+  {
+    "Author": "Glamour Pact contributors",
+    "Name": "Glamour Pact",
+    "Punchline": "Dom-controlled looks, local Synced Mods and opt-in strict controls.",
+    "Description": "A compact Dom/Sub wardrobe companion. Lock Glamourer equipment, create local Penumbra looks from already-resolved sync resources, and optionally enable experimental exact-Dom follow or pose locks. Optional Dom control of GPact Offline; disabling Glamour Pact in Dalamud always releases locally.",
+    "InternalName": "GlamourPact.Plugin",
+    "AssemblyVersion": "0.5.13.0",
+    "Changelog": "Supports Penumbra 1.7.2 consolidated meta.json groups and defaults while retaining legacy mod support. Offline control now starts unlocked after login or plugin restart: the Dom manually locks it on the same current FFXIV world. Owner Offline, a world change or an expired 12-second heartbeat releases it; renewals never recreate a released lock. Restores the last verified Dom outfit, dyes, glasses and enabled GPact Synced Looks with their priorities and locks on the next login for the same character and pact. Auto-Online waits for provider cleanup when needed. Both clients must update; plugin disabling and FFXIV logout remain available. No server update required.",
+    "RepoUrl": "https://github.com/kittenhaswares-ui/GlamourPact-Updates",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "Tags": [
+      "glamour",
+      "glamourer",
+      "roleplay",
+      "social"
+    ],
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
+    "DownloadLinkTesting": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
+    "LastUpdate": "1789439051"
+  }
+]
