@@ -5,8 +5,8 @@
     "Punchline": "Dom-controlled looks, local Synced Mods and opt-in strict controls.",
     "Description": "A compact Dom/Sub wardrobe companion. Lock Glamourer equipment, create local Penumbra looks from already-resolved sync resources, and optionally enable experimental exact-Dom follow or pose locks. Optional Dom control of GPact Offline; disabling Glamour Pact in Dalamud always releases locally.",
     "InternalName": "GlamourPact.Plugin",
-    "AssemblyVersion": "0.5.14.0",
-    "Changelog": "Stops background Offline-lock heartbeats and acknowledgements from disabling or hiding controls. Sit and emote panels stay stable, and locked emote choices never silently reset. Saved Synced Look recovery backs off, pauses after three activation failures or an invalid local mod, and offers Retry saved looks without repeating successful restores. The complete desired saved look remains preserved. Same-world Offline locks, permissions and plugin-disable escape remain unchanged. No server update required.",
+    "AssemblyVersion": "0.5.15.0",
+    "Changelog": "Reduces idle server traffic: hidden unpaired clients and Doms with only offline peers refresh presence every 30 seconds; hidden Dom telemetry slows while active controls and commands stay responsive. Identical Sub status uploads are deduplicated without changing the 15-second heartbeat. Opening controls refreshes immediately. Same-world Offline-lock renewal, expiry, permissions and plugin-disable escape remain unchanged. The service also receives an index-only D1 optimization with no protocol change.",
     "RepoUrl": "https://github.com/kittenhaswares-ui/GlamourPact-Updates",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
@@ -21,6 +21,6 @@
     "DownloadLinkInstall": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
     "DownloadLinkUpdate": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
     "DownloadLinkTesting": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
-    "LastUpdate": "1789544436"
+    "LastUpdate": "1789860913"
   }
 ]
