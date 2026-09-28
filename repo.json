@@ -3,10 +3,10 @@
     "Author": "Glamour Pact contributors",
     "Name": "Glamour Pact",
     "Punchline": "Dom-controlled looks, local Synced Mods and opt-in strict controls.",
-    "Description": "A compact Dom/Sub wardrobe companion. Lock Glamourer equipment, create local Penumbra looks from already-resolved sync resources, and optionally enable experimental exact-Dom follow or pose locks. Optional Dom control of GPact Offline; disabling Glamour Pact in Dalamud always releases locally.",
+    "Description": "An opt-in Dom/Sub outfit library with named outfits, copyable macros, a Lock glams toggle, separate Sub editing permissions, local Synced Looks, Customize+ profile choices and helmet controls without weapon edits. Optional exact-Dom follow, looping pose locks and GPact Offline control; disabling the plugin remains the local exit. Both players need this update for library controls.",
     "InternalName": "GlamourPact.Plugin",
-    "AssemblyVersion": "0.5.15.0",
-    "Changelog": "Reduces idle server traffic: hidden unpaired clients and Doms with only offline peers refresh presence every 30 seconds; hidden Dom telemetry slows while active controls and commands stay responsive. Identical Sub status uploads are deduplicated without changing the 15-second heartbeat. Opening controls refreshes immediately. Same-world Offline-lock renewal, expiry, permissions and plugin-disable escape remain unchanged. The service also receives an index-only D1 optimization with no protocol change.",
+    "AssemblyVersion": "0.6.0.0",
+    "Changelog": "Adds the shared Outfit Library with named outfits, chest icons, saved GPact mods, opt-in Customize+ profiles and exact-pact macro copy buttons. Dom Lock glams allows self-glam without going Offline; separate add/edit/delete permissions preserve Sub-owned outfit editing without bypassing wear locks. Adds temporary Dom preview, existing sync installation and verified outfit save, plus helmet/visor controls without weapon edits. Updates looping emote locks for the reviewed game build and adds follow-only release. Both players must update; native controls require supported hooks and plugin disable remains the local exit. No new server polling or mod-file uploads.",
     "RepoUrl": "https://github.com/kittenhaswares-ui/GlamourPact-Updates",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
@@ -21,6 +21,6 @@
     "DownloadLinkInstall": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
     "DownloadLinkUpdate": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
     "DownloadLinkTesting": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
-    "LastUpdate": "1789860913"
+    "LastUpdate": "1790576650"
   }
 ]
