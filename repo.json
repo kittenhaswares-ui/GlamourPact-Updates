@@ -3,10 +3,10 @@
     "Author": "Glamour Pact contributors",
     "Name": "Glamour Pact",
     "Punchline": "Dom-controlled looks, local Synced Mods and opt-in strict controls.",
-    "Description": "An opt-in Dom/Sub outfit library with named outfits, copyable macros, a Lock glams toggle, separate Sub editing permissions, local Synced Looks, Customize+ profile choices and helmet controls without weapon edits. Optional exact-Dom follow, looping pose locks and GPact Offline control; disabling the plugin remains the local exit. Both players need this update for library controls.",
+    "Description": "An opt-in Dom/Sub outfit library with named outfits, copyable macros, configurable glam locks, local Synced Looks and Customize+ profile/template choices. Shared Customize+ profiles require separate consent. Automatic styling pauses safely during transfers; helmet controls never edit weapons. Optional exact-Dom follow, looping pose locks and GPact Offline control; disabling the plugin remains the local exit. Both players must update to 0.6.1 for new wardrobe controls.",
     "InternalName": "GlamourPact.Plugin",
-    "AssemblyVersion": "0.6.0.0",
-    "Changelog": "Adds the shared Outfit Library with named outfits, chest icons, saved GPact mods, opt-in Customize+ profiles and exact-pact macro copy buttons. Dom Lock glams allows self-glam without going Offline; separate add/edit/delete permissions preserve Sub-owned outfit editing without bypassing wear locks. Adds temporary Dom preview, existing sync installation and verified outfit save, plus helmet/visor controls without weapon edits. Updates looping emote locks for the reviewed game build and adds follow-only release. Both players must update; native controls require supported hooks and plugin disable remains the local exit. No new server polling or mod-file uploads.",
+    "AssemblyVersion": "0.6.1.0",
+    "Changelog": "Adds default-off shared Customize+ profile permission, including Any World; enable it in My Safety while Offline alongside normal Customize+ consent. Only profiles applying to the Sub are controllable; normal profile/template flags also affect their other assignments/default uses. Outfits can now keep template choices unchanged or save an exact enabled subset, including none. Discovery is explicit and metadata-only; stale template selections fail closed. Recovery preserves manual changes and reassignment. No profile clones, temporary Customize+ overrides or body uploads. Automatic styling pauses during transfers, cleanup and settling, cancels stale sends and resumes without an immediate echo. Auto Send preference, manual Off and existing lock/mirror guards are preserved. Both players must update to 0.6.1.",
     "RepoUrl": "https://github.com/kittenhaswares-ui/GlamourPact-Updates",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
@@ -21,6 +21,6 @@
     "DownloadLinkInstall": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
     "DownloadLinkUpdate": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
     "DownloadLinkTesting": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
-    "LastUpdate": "1790576650"
+    "LastUpdate": "1790581960"
   }
 ]
