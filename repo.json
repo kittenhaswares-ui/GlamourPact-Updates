@@ -3,10 +3,10 @@
     "Author": "Glamour Pact contributors",
     "Name": "Glamour Pact",
     "Punchline": "Dom-controlled looks, local Synced Mods and opt-in strict controls.",
-    "Description": "An opt-in Dom/Sub outfit library with named outfits, copyable macros, configurable glam locks, local Synced Looks and Customize+ profile/template choices. Shared Customize+ profiles require separate consent. Automatic styling pauses safely during transfers; helmet controls never edit weapons. Optional exact-Dom follow, looping pose locks and GPact Offline control; disabling the plugin remains the local exit. Update both players to 0.6.2 for CC-transition fixes.",
+    "Description": "An opt-in Dom/Sub outfit library with named outfits, copyable macros, configurable glam locks, local Synced Looks and Customize+ profile/template choices. Shared Customize+ profiles require separate consent. Automatic styling pauses safely during transfers; helmet controls never edit weapons. Optional exact-Dom follow, looping pose locks and GPact Offline control; disabling the plugin remains the local exit. Update both players to 0.6.3 for more resilient Offline-lock renewal.",
     "InternalName": "GlamourPact.Plugin",
-    "AssemblyVersion": "0.6.2.0",
-    "Changelog": "Fixes GPact presence, session-control polling and Offline-lock renewal stopping when CC/duty transitions temporarily remove the local actor. Uses validated login identity for networking and retains the last public world across temporary internal duty-world values. Actual world changes, logout, character changes and expired leases still release the Offline lock; it never silently relocks. Roleplay control processing no longer waits on Glamourer outfit recovery, while actor availability and native competitive-PvP safety checks remain required. Updates the reviewed FFXIVClientStructs pin to 7.56.2.9237; GPact-used source layouts and signatures are unchanged, but in-game validation remains separate. Client-only update: no SeitonSense changes, Worker deployment or database migration. Update both players to benefit from the transition fixes.",
+    "AssemblyVersion": "0.6.3.0",
+    "Changelog": "Makes Offline-lock renewal independent of the general network queue while preserving control-send order. A transient request failure no longer abandons renewal of a confirmed lock; attempts retain the existing four-second cadence. The Sub lease is bounded at 30 seconds instead of 12, so an unseen disconnect may take up to 30 seconds to release. Observed owner Offline, real world changes, logout, character changes and plugin restart still release the lock; expired locks never silently revive. Adds release-reason reporting. Client-only update: no SeitonSense, Worker, D1 or native-reference changes. Update both players.",
     "RepoUrl": "https://github.com/kittenhaswares-ui/GlamourPact-Updates",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
@@ -21,6 +21,6 @@
     "DownloadLinkInstall": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
     "DownloadLinkUpdate": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
     "DownloadLinkTesting": "https://raw.githubusercontent.com/kittenhaswares-ui/GlamourPact-Updates/main/dist/glamour-pact-latest.zip",
-    "LastUpdate": "1791009533"
+    "LastUpdate": "1791017065"
   }
 ]
